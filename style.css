@@ -1,0 +1,266 @@
+/* Set page background color to light grey */
+html,
+body {
+  box-sizing: border-box;
+  background-color: #f0f0f0; /* Use the desired shade of grey */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 20px; /* Adjust the font size for smaller screens */
+  }
+  .filter-area {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: flex-start; /* Align inputs to the left */
+    padding: 1rem;
+  }
+
+  /* Stack the filter controls vertically */
+  .filter-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .filter-control {
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    width: 100%; /* Make the inputs full width */
+    font-size: 20px; /* Adjust the font size for smaller screens */
+    /* Add more styles as needed */
+  }
+
+  /* Adjust font size and other styles for table */
+  table {
+    width: 100px;
+    font-size: 24px; /* Adjust the font size for smaller screens */
+    /* Add more styles as needed */
+  }
+  .disclaimer {
+    text-indent: 0; /* Reset text-indent to remove the hanging indent */
+    padding-left: 0; /* Reset padding-left as well */
+  }
+}
+
+/* Style for the header Area */
+.header {
+  background: linear-gradient(#969696, #f0f0f0);
+  padding-left: 1rem;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.header h1 {
+  color: #2d2d4b;
+  font-size: 4rem;
+  text-shadow: 3px 3px #8f8f8f;
+  margin: 0;
+}
+
+#preface {
+  padding-left: 15px;
+  color: #888;
+  line-height: 1.5;
+  margin: 0;
+  font-style: italic;
+  font-size: small;
+}
+
+/* Style for the filter area */
+#filterArea {
+  background-color: #f0f0f0;
+  padding-left: 2rem;
+  padding-bottom: 1.5rem;
+  width: fit-content;
+}
+
+/* Add styles for the filter description */
+.filter-description {
+  padding: 0;
+  margin: 0; /* Adjust spacing as needed */
+  font-weight: bold;
+}
+
+.filter-controls {
+  padding-top: 0;
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Style for filter inputs */
+#filterColumn4,
+#filterColumn6,
+#filterColumn7 {
+  padding: 8px;
+  border: 1px inset #a3a3a3;
+  border-radius: 4px;
+  width: 250px;
+  max-height: 50px;
+  min-height: 20px;
+  margin-right: 10px;
+  font-size: large;
+}
+
+/* Style for select elements */
+select {
+  background-color: #fff;
+  padding: 8px;
+  border: 1px solid #a3a3a3;
+  box-shadow: 2px 2px 2px;
+  border-radius: 4px;
+  width: 200px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#resetFilter {
+  background-color: #d3b28c;
+  border: 1px solid #a3a3a3;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer; /* Add cursor style */
+}
+
+/* Apply styles when button is pressed */
+#resetFilter:active {
+  color: #eee;
+  background-color: #344249; /* Change color when pressed */
+  border: 2.5px inset #888888;
+  box-shadow: 0 0 0; /* Remove shadow when pressed */
+  transform: translateY(1px); /* Add a small vertical shift when pressed */
+}
+
+/* Set a static width for the table cells */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  height: 40px;
+}
+
+th {
+  background-color: #585858;
+  color: #f1f1f1;
+  border: 1px solid #eee;
+  border-top: 2px solid #3f3f3f;
+  border-bottom: 2px solid #3f3f3f;
+}
+
+/* Apply alternating background colors to td elements */
+tr:nth-child(odd) td {
+  background-color: #b1b1b1; /* Lighter grey */
+  border: 1px solid #ddd;
+  border-bottom: 1px dotted #3f3f3f;
+}
+
+tr:nth-child(even) td {
+  background-color: #ffffff; /* Darker grey */
+  border: 1px solid #929292;
+  border-bottom: 1px dotted #3f3f3f;
+}
+
+/* Set static width for specific columns */
+
+/* Timestamp */
+th:nth-child(1),
+td:nth-child(1) {
+  width: 75px; /* Adjust the width as needed */
+  font-weight: bold;
+}
+
+/* Main Lateral */
+th:nth-child(2),
+td:nth-child(2) {
+  width: 100px; /* Adjust the width as needed */
+}
+
+/* CFS */
+th:nth-child(3),
+td:nth-child(3) {
+  width: 20px; /* Adjust the width as needed */
+}
+
+/* Order # */
+th:nth-child(4),
+td:nth-child(4) {
+  width: 50px; /* Adjust the width as needed */
+  font-style: italic;
+  /* color: blue; */
+}
+
+/* Status */
+th:nth-child(5),
+td:nth-child(5) {
+  width: 50px; /* Adjust the width as needed */
+}
+
+/* District */
+th:nth-child(6),
+td:nth-child(6) {
+  width: 100px; /* Adjust the width as needed */
+}
+
+/* Line/Head */
+th:nth-child(7),
+td:nth-child(7) {
+  width: 150px; /* Adjust the width as needed */
+}
+
+/* Add more nth-child rules for additional columns if needed */
+
+/* Footer */
+#footer {
+  padding: 2rem;
+  width: fit-content;
+}
+
+.disclaimer {
+  font-size: x-large;
+  font-style: italic;
+  color: #3f3f3f;
+  font-weight: bolder;
+  font-style: italic;
+  margin-bottom: 4rem;
+  line-height: 1.5;
+  padding-left: 10%;
+}
+
+.author {
+  font-style: italic;
+  color: #3f3f3f;
+  font-weight: bolder;
+  font-size: small;
+}
+
+.copywrite {
+  font-style: italic;
+  color: #2d2d4b;
+  font-weight: bolder;
+  font-size: smaller;
+}
+
+/* 
+MIT License
+
+Copyright © 2023 Michael Lambson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+*/
